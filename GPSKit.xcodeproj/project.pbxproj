@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4A9373D4A548C7AD83F388 /* libPods-GPSKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACD1E2FF88442A496423352 /* libPods-GPSKitTests.a */; };
+		8155633D1925B3D800805AD5 /* CLHCoreLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8155633C1925B3D800805AD5 /* CLHCoreLocationManagerTests.m */; };
+		8159ADA818B8FA3C00C68532 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159ADA718B8FA3C00C68532 /* XCTest.framework */; };
+		8159ADA918B8FA3C00C68532 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159AD9918B8FA3C00C68532 /* Foundation.framework */; };
+		8159ADAB18B8FA3C00C68532 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159ADAA18B8FA3C00C68532 /* UIKit.framework */; };
+		8159ADAE18B8FA3C00C68532 /* libGPSKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159AD9618B8FA3C00C68532 /* libGPSKit.a */; };
+		8159ADB418B8FA3C00C68532 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8159ADB218B8FA3C00C68532 /* InfoPlist.strings */; };
+		8159ADC118B8FA6200C68532 /* CLHCoreLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */; };
+		8160E440191DCEAB005A3CFA /* CLHGPSKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8194DD93191D436D0033002D /* CLHGPSKit.h */; };
+		8160E441191DCEAB005A3CFA /* CLHLocationSubscriber.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8194DD8E191D42CF0033002D /* CLHLocationSubscriber.h */; };
+		8160E442191DCEAB005A3CFA /* CLHCoreLocationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8159ADBF18B8FA6200C68532 /* CLHCoreLocationManager.h */; };
+		8194DCB4191D3CBB0033002D /* CLHLocationSubscriberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DCB3191D3CBB0033002D /* CLHLocationSubscriberTests.m */; };
+		8194DD91191D42CF0033002D /* CLHLocationSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8159ADAC18B8FA3C00C68532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8159AD8E18B8FA3C00C68532 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8159AD9518B8FA3C00C68532;
+			remoteInfo = CLHLocationManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8159AD9418B8FA3C00C68532 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8160E440191DCEAB005A3CFA /* CLHGPSKit.h in CopyFiles */,
+				8160E441191DCEAB005A3CFA /* CLHLocationSubscriber.h in CopyFiles */,
+				8160E442191DCEAB005A3CFA /* CLHCoreLocationManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5729A8EFE4ED455F90ACABEC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACD1E2FF88442A496423352 /* libPods-GPSKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPSKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A8C471921C9C7006C6185 /* CLHCoreLocationManager_TestMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCoreLocationManager_TestMethods.h; sourceTree = "<group>"; };
+		813A8C481921CA00006C6185 /* CLHLocationSubscriber_TestMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLocationSubscriber_TestMethods.h; sourceTree = "<group>"; };
+		8155633C1925B3D800805AD5 /* CLHCoreLocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHCoreLocationManagerTests.m; sourceTree = "<group>"; };
+		8159AD9618B8FA3C00C68532 /* libGPSKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGPSKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8159AD9918B8FA3C00C68532 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8159AD9D18B8FA3C00C68532 /* GPSKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSKit-Prefix.pch"; sourceTree = "<group>"; };
+		8159ADA618B8FA3C00C68532 /* GPSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8159ADA718B8FA3C00C68532 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8159ADAA18B8FA3C00C68532 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8159ADB118B8FA3C00C68532 /* GPSKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSKitTests-Info.plist"; sourceTree = "<group>"; };
+		8159ADB318B8FA3C00C68532 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8159ADBF18B8FA6200C68532 /* CLHCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCoreLocationManager.h; sourceTree = "<group>"; };
+		8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHCoreLocationManager.m; sourceTree = "<group>"; };
+		8194DCB3191D3CBB0033002D /* CLHLocationSubscriberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLHLocationSubscriberTests.m; path = Tests/CLHLocationSubscriberTests.m; sourceTree = SOURCE_ROOT; };
+		8194DD8E191D42CF0033002D /* CLHLocationSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLocationSubscriber.h; sourceTree = "<group>"; };
+		8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLocationSubscriber.m; sourceTree = "<group>"; };
+		8194DD93191D436D0033002D /* CLHGPSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHGPSKit.h; sourceTree = "<group>"; };
+		E55857D81C804BE0A50C3C03 /* libPods-CLHLocationManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLHLocationManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7271C21376541478FCAD12F /* Pods-GPSKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPSKitTests.xcconfig"; path = "Pods/Pods-GPSKitTests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8159AD9318B8FA3C00C68532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8159ADA318B8FA3C00C68532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8159ADAE18B8FA3C00C68532 /* libGPSKit.a in Frameworks */,
+				8159ADA818B8FA3C00C68532 /* XCTest.framework in Frameworks */,
+				8159ADAB18B8FA3C00C68532 /* UIKit.framework in Frameworks */,
+				8159ADA918B8FA3C00C68532 /* Foundation.framework in Frameworks */,
+				1A4A9373D4A548C7AD83F388 /* libPods-GPSKitTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8159AD8D18B8FA3C00C68532 = {
+			isa = PBXGroup;
+			children = (
+				8159AD9B18B8FA3C00C68532 /* Source */,
+				8159ADAF18B8FA3C00C68532 /* Tests */,
+				8159AD9818B8FA3C00C68532 /* Frameworks */,
+				8159AD9718B8FA3C00C68532 /* Products */,
+				F7271C21376541478FCAD12F /* Pods-GPSKitTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		8159AD9718B8FA3C00C68532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8159AD9618B8FA3C00C68532 /* libGPSKit.a */,
+				8159ADA618B8FA3C00C68532 /* GPSKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8159AD9818B8FA3C00C68532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8159AD9918B8FA3C00C68532 /* Foundation.framework */,
+				8159ADA718B8FA3C00C68532 /* XCTest.framework */,
+				8159ADAA18B8FA3C00C68532 /* UIKit.framework */,
+				5729A8EFE4ED455F90ACABEC /* libPods.a */,
+				E55857D81C804BE0A50C3C03 /* libPods-CLHLocationManagerTests.a */,
+				5ACD1E2FF88442A496423352 /* libPods-GPSKitTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8159AD9B18B8FA3C00C68532 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8194DD93191D436D0033002D /* CLHGPSKit.h */,
+				8159ADBF18B8FA6200C68532 /* CLHCoreLocationManager.h */,
+				8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */,
+				8194DD8E191D42CF0033002D /* CLHLocationSubscriber.h */,
+				8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */,
+				8159AD9C18B8FA3C00C68532 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8159AD9C18B8FA3C00C68532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8159AD9D18B8FA3C00C68532 /* GPSKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8159ADAF18B8FA3C00C68532 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8155633C1925B3D800805AD5 /* CLHCoreLocationManagerTests.m */,
+				8194DCB3191D3CBB0033002D /* CLHLocationSubscriberTests.m */,
+				813A8C471921C9C7006C6185 /* CLHCoreLocationManager_TestMethods.h */,
+				813A8C481921CA00006C6185 /* CLHLocationSubscriber_TestMethods.h */,
+				8159ADB018B8FA3C00C68532 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8159ADB018B8FA3C00C68532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8159ADB118B8FA3C00C68532 /* GPSKitTests-Info.plist */,
+				8159ADB218B8FA3C00C68532 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8194DCB1191D3ADA0033002D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8159AD9518B8FA3C00C68532 /* GPSKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8159ADB918B8FA3D00C68532 /* Build configuration list for PBXNativeTarget "GPSKit" */;
+			buildPhases = (
+				8159AD9218B8FA3C00C68532 /* Sources */,
+				8159AD9318B8FA3C00C68532 /* Frameworks */,
+				8159AD9418B8FA3C00C68532 /* CopyFiles */,
+				8194DCB1191D3ADA0033002D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSKit;
+			productName = CLHLocationManager;
+			productReference = 8159AD9618B8FA3C00C68532 /* libGPSKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8159ADA518B8FA3C00C68532 /* GPSKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8159ADBC18B8FA3D00C68532 /* Build configuration list for PBXNativeTarget "GPSKitTests" */;
+			buildPhases = (
+				CA14C40EBF1F4F209CF5B852 /* Check Pods Manifest.lock */,
+				8159ADA218B8FA3C00C68532 /* Sources */,
+				8159ADA318B8FA3C00C68532 /* Frameworks */,
+				8159ADA418B8FA3C00C68532 /* Resources */,
+				0102E7A70E0A4A25B5AD9C08 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8159ADAD18B8FA3C00C68532 /* PBXTargetDependency */,
+			);
+			name = GPSKitTests;
+			productName = CLHLocationManagerTests;
+			productReference = 8159ADA618B8FA3C00C68532 /* GPSKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8159AD8E18B8FA3C00C68532 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CLH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Curtis Herbert";
+				TargetAttributes = {
+					8159ADA518B8FA3C00C68532 = {
+						TestTargetID = 8159AD9518B8FA3C00C68532;
+					};
+				};
+			};
+			buildConfigurationList = 8159AD9118B8FA3C00C68532 /* Build configuration list for PBXProject "GPSKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8159AD8D18B8FA3C00C68532;
+			productRefGroup = 8159AD9718B8FA3C00C68532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8159AD9518B8FA3C00C68532 /* GPSKit */,
+				8159ADA518B8FA3C00C68532 /* GPSKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8159ADA418B8FA3C00C68532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8159ADB418B8FA3C00C68532 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0102E7A70E0A4A25B5AD9C08 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GPSKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA14C40EBF1F4F209CF5B852 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8159AD9218B8FA3C00C68532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8194DD91191D42CF0033002D /* CLHLocationSubscriber.m in Sources */,
+				8159ADC118B8FA6200C68532 /* CLHCoreLocationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8159ADA218B8FA3C00C68532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8194DCB4191D3CBB0033002D /* CLHLocationSubscriberTests.m in Sources */,
+				8155633D1925B3D800805AD5 /* CLHCoreLocationManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8159ADAD18B8FA3C00C68532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8159AD9518B8FA3C00C68532 /* GPSKit */;
+			targetProxy = 8159ADAC18B8FA3C00C68532 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8159ADB218B8FA3C00C68532 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8159ADB318B8FA3C00C68532 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8159ADB718B8FA3D00C68532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8159ADB818B8FA3D00C68532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8159ADBA18B8FA3D00C68532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/GPSKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/GPSKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GPSKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8159ADBB18B8FA3D00C68532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/GPSKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/GPSKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GPSKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8159ADBD18B8FA3D00C68532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7271C21376541478FCAD12F /* Pods-GPSKitTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/GPSKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/GPSKitTests-Info.plist";
+				PRODUCT_NAME = GPSKitTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8159ADBE18B8FA3D00C68532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7271C21376541478FCAD12F /* Pods-GPSKitTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Source/GPSKit-Prefix.pch";
+				INFOPLIST_FILE = "Tests/GPSKitTests-Info.plist";
+				PRODUCT_NAME = GPSKitTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8159AD9118B8FA3C00C68532 /* Build configuration list for PBXProject "GPSKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8159ADB718B8FA3D00C68532 /* Debug */,
+				8159ADB818B8FA3D00C68532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8159ADB918B8FA3D00C68532 /* Build configuration list for PBXNativeTarget "GPSKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8159ADBA18B8FA3D00C68532 /* Debug */,
+				8159ADBB18B8FA3D00C68532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8159ADBC18B8FA3D00C68532 /* Build configuration list for PBXNativeTarget "GPSKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8159ADBD18B8FA3D00C68532 /* Debug */,
+				8159ADBE18B8FA3D00C68532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8159AD8E18B8FA3C00C68532 /* Project object */;
+}
