@@ -27,7 +27,7 @@
 #import <GPSKit/CLHGPSKit.h>
 #include "TargetConditionals.h"
 
-@interface CLHSignalStrengthViewController ()
+@interface CLHSignalStrengthViewController () <UIAlertViewDelegate>
 
 @property (nonatomic) CLHLocationSubscriber *locationSubscriber;
 @property (strong, nonatomic) NSMutableArray *strengths;
@@ -82,6 +82,14 @@
         __strong typeof(weakSelf) strongSelf = weakSelf;
         [strongSelf trackNewStrength:strength];
     }];
+    
+    //In iOS8 we can link them to the settings page for an app
+    if (&UIApplicationOpenSettingsURLString != NULL) {
+        if (self.locationSubscriber.authorizationStatus == kCLAuthorizationStatusDenied) {
+            UIAlertView *settingsAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Denied" message:@"To use this app you need to allow access to the GPS. Go to settings to enable it?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+            [settingsAlert show];
+        }
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -138,6 +146,15 @@
     CLHGPSKitSignalStrength recordedStrength = [self.strengths[indexPath.row] intValue];
     cell.textLabel.text = [CLHSignalStrengthViewController stringForStrength:recordedStrength];
     return cell;
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != alertView.cancelButtonIndex && &UIApplicationOpenSettingsURLString != NULL) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    }
 }
 
 @end

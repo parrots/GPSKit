@@ -138,6 +138,11 @@
     return self.coreLocationManager.currentStrength;
 }
 
+- (CLAuthorizationStatus)authorizationStatus
+{
+    return self.coreLocationManager.authorizationStatus;
+}
+
 #pragma mark - GPS mode subscription options
 
 - (void)startSignalMonitoringWithHandler:(void (^)(CLHGPSKitSignalStrength))handler

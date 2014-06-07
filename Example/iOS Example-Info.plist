@@ -48,6 +48,10 @@
 			<false/>
 		</dict>
 	</dict>
+    <key>NSLocationUsageDescription</key>
+    <string>Your location is used to show off the app.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your location is used to show off the app.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -28,7 +28,7 @@
 #import "CLHMapPin.h"
 #import <GPSKit/CLHGPSKit.h>
 
-@interface CLHResolveLocationController ()
+@interface CLHResolveLocationController () <UIAlertViewDelegate>
 
 @property (nonatomic) CLHLocationSubscriber *locationSubscriber;
 
@@ -83,6 +83,15 @@
         MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(0.05, 0.05));
         [strongSelf.mapView setRegion:region animated:YES];
     }];
+    
+    //In iOS8 we can link them to the settings page for an app
+    if (&UIApplicationOpenSettingsURLString != NULL) {
+        if (self.locationSubscriber.authorizationStatus == kCLAuthorizationStatusDenied) {
+            UIAlertView *settingsAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Denied" message:@"To use this app you need to allow access to the GPS. Go to settings to enable it?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+            [settingsAlert show];
+        }
+    }
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -90,6 +99,15 @@
     [super viewWillDisappear:animated];
     
     [self.locationSubscriber cancelResolvingCurrentLocation];
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != alertView.cancelButtonIndex && &UIApplicationOpenSettingsURLString != NULL) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    }
 }
 
 @end

@@ -105,6 +105,10 @@ extern NSString * const CLHGPSKitLocationResolvedNotificationNoteKey;
  *  Most recent signal strength reported by the system. Here for KVO goodness.
  */
 @property (readonly) CLHGPSKitSignalStrength currentStrength;
+/**
+ *  Current authorization status for Core Location.
+ */
+@property (readonly) CLAuthorizationStatus authorizationStatus;
 
 /**
  *  Time interval at which to re-check signal strength when last-known was healthy. Default to 15.

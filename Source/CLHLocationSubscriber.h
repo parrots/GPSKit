@@ -44,6 +44,10 @@
  *  Most recent signal strength reported by the system. Here for KVO goodness.
  */
 @property (readonly) CLHGPSKitSignalStrength currentStrength;
+/**
+ *  Current authorization status for Core Location.
+ */
+@property (readonly) CLAuthorizationStatus authorizationStatus;
 
 /**
  *  Tells the system to start polling for GPS signal strength updates by requesting the current location
