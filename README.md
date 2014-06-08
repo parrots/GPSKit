@@ -1,4 +1,6 @@
 #GPSKit
+[![Build Status](https://travis-ci.org/parrots/GPSKit.svg?branch=master)](https://travis-ci.org/parrots/GPSKit)
+
 CoreLocation without the fuss (and with blocks!).
 
 CoreLocation is really powerful, but with great power comes great responsibility. There’s a lot of non-obvious stuff you’re responsible to plan for when using CoreLocation for everyday tasks. GPSKit is a library that does all the heavy lifting for you and simplifies these common tasks into a new shiny block-based interface
