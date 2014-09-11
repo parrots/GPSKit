@@ -146,13 +146,10 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     dispatch_once(&onceToken, ^{
         if (!self.locationManager) {
             [self useLocationManager:[[CLLocationManager alloc] init]];
-            //iOS 8 support
-            #pragma GCC diagnostic push
-            #pragma clang diagnostic ignored "-Wundeclared-selector"
+            
             if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
                 [self.locationManager performSelector:@selector(requestWhenInUseAuthorization)];
             }
-            #pragma GCC diagnostic pop
         }
     });
     
