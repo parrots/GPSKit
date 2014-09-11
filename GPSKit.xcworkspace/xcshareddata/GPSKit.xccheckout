@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>539F1A43-68C6-44AC-BCF9-148AE5777B1F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GPSKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E547FE5214F1232B62A91FD35A4F4BF39A8F3E1</key>
+		<string>https://github.com/parrots/GPSKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GPSKit.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E547FE5214F1232B62A91FD35A4F4BF39A8F3E1</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/parrots/GPSKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E547FE5214F1232B62A91FD35A4F4BF39A8F3E1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E547FE5214F1232B62A91FD35A4F4BF39A8F3E1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GPSKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
