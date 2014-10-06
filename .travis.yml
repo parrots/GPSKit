@@ -3,6 +3,6 @@ before_install:
   - export LANG=en_US.UTF-8
   - gem install cocoapods --no-rdoc
   - brew update
-  - brew upgrade xctool
+  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 script:
   - xctool test -workspace GPSKit.xcworkspace -scheme GPSKit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
