@@ -70,7 +70,8 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self.resolvedLocationSubscriptionToken];
     [[NSNotificationCenter defaultCenter] removeObserver:self.errorSubscriptionToken];
     
-    for (NSNumber *mode in self.subscribedModes) {
+    NSArray *currentModes = [self.subscribedModes copy];
+    for (NSNumber *mode in currentModes) {
         [self disableMode:[mode intValue]];
     }
 }
