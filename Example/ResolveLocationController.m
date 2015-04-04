@@ -1,5 +1,5 @@
 //
-//  CLHSignalStrengthViewController.m
+//  DetailViewController.m
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -23,39 +23,29 @@
 //  THE SOFTWARE.
 //
 
-#import "CLHSignalStrengthViewController.h"
-#import <GPSKit/CLHGPSKit.h>
-#include "TargetConditionals.h"
+@import CoreLocation;
+@import GPSKit;
+#import "ResolveLocationController.h"
+#import "MapPin.h"
 
-@interface CLHSignalStrengthViewController () <UIAlertViewDelegate>
+@interface ResolveLocationController () <UIAlertViewDelegate>
 
 @property (nonatomic) CLHLocationSubscriber *locationSubscriber;
-@property (strong, nonatomic) NSMutableArray *strengths;
 
 @end
 
-@implementation CLHSignalStrengthViewController
+@implementation ResolveLocationController
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.strengths = [[NSMutableArray alloc] init];
         self.locationSubscriber = [[CLHLocationSubscriber alloc] init];
     }
     return self;
 }
 
 #pragma mark - View lifecycle
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    if (self.locationSubscriber.currentStrength != CLHGPSKitSignalStrengthNone) {
-        [self trackNewStrength:self.locationSubscriber.currentStrength];
-    }
-}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -78,9 +68,20 @@
     }];
     
     __weak typeof(self) weakSelf = self;
-    [self.locationSubscriber startSignalMonitoringWithHandler:^(CLHGPSKitSignalStrength strength) {
+    [self.locationSubscriber resolveCurrentLocationWithInProgressHandler:^(CLLocation *location) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
-        [strongSelf trackNewStrength:strength];
+        MapPin *point = [[MapPin alloc] init];
+        point.coordinate = location.coordinate;
+        [strongSelf.mapView addAnnotation:point];
+        
+    } andCompletionHandler:^(CLLocation *location) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        MapPin *point = [[MapPin alloc] init];
+        point.coordinate = location.coordinate;
+        [strongSelf.mapView addAnnotation:point];
+        
+        MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(0.05, 0.05));
+        [strongSelf.mapView setRegion:region animated:YES];
     }];
     
     //In iOS8 we can link them to the settings page for an app
@@ -90,62 +91,14 @@
             [settingsAlert show];
         }
     }
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
-    [self.locationSubscriber stopSignalMonitoring];
-}
-
-#pragma mark - Strength tracking
-
-- (void)trackNewStrength:(CLHGPSKitSignalStrength)strength
-{
-    [self.strengths insertObject:@(strength) atIndex:0];
-    [self.tableView reloadData];
-}
-
-+ (NSString *)stringForStrength:(CLHGPSKitSignalStrength)strength
-{
-    switch (strength) {
-        case CLHGPSKitSignalStrengthNone:
-            return @"No GPS signal";
-            break;
-        case CLHGPSKitSignalStrengthPoor:
-            return @"Poor GPS signal";
-            break;
-        case CLHGPSKitSignalStrengthFair:
-            return @"Fair GPS signal";
-            break;
-        case CLHGPSKitSignalStrengthGreat:
-            return @"Great GPS signal";
-            break;
-        default:
-            return nil;
-            break;
-    }
-}
-
-#pragma mark - UITableViewDataSource
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.strengths count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StrengthCell"];
-    CLHGPSKitSignalStrength recordedStrength = [self.strengths[indexPath.row] intValue];
-    cell.textLabel.text = [CLHSignalStrengthViewController stringForStrength:recordedStrength];
-    return cell;
+    [self.locationSubscriber cancelResolvingCurrentLocation];
 }
 
 #pragma mark - UIAlertViewDelegate

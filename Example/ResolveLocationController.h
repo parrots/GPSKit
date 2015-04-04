@@ -1,5 +1,5 @@
 //
-//  CLHAppDelegate.h
+//  DetailViewController.h
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -24,9 +24,10 @@
 //
 
 @import UIKit;
+@import MapKit;
 
-@interface CLHAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ResolveLocationController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

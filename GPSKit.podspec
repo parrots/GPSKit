@@ -1,15 +1,15 @@
-Pod::Spec.new do |spec|  
+Pod::Spec.new do |spec|
   spec.name = "GPSKit"
-  spec.version = "0.8.5"
+  spec.version = "1.0.0"
   spec.summary = "CoreLocation without the fuss (and with blocks!)."
 
-  spec.homepage = "http://consumedbycode.com/goodies/gpskit"
+  spec.homepage = "https://github.com/parrots/GPSKit"
   spec.license = {
     :type => 'MIT',
     :file => 'LICENSE'
   }
-  spec.author = { 
-    "Curtis Herbert" => "me@curtisherbert.com" 
+  spec.author = {
+    "Curtis Herbert" => "me@curtisherbert.com"
   }
   spec.source = {
     :git => 'https://github.com/parrots/GPSKit.git',
@@ -17,10 +17,8 @@ Pod::Spec.new do |spec|
   }
 
   spec.source_files = 'Source/*.{m,h}'
-  spec.public_header_files = 'Source/**/*.h'
   spec.platform = :ios, '7.0'
   spec.framework = 'CoreLocation'
   spec.requires_arc = true
   spec.ios.deployment_target = '7.0'
-  spec.compiler_flags = '-fmodules'
-end  
+end

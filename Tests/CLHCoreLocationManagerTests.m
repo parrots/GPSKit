@@ -25,6 +25,8 @@
 
 @import CoreLocation;
 @import UIKit;
+@import Foundation;
+@import GPSKit;
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 #import "CLHCoreLocationManager_TestMethods.h"

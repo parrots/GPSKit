@@ -23,7 +23,7 @@
 //  THE SOFTWARE.
 //
 
-#import "CLHLocationSubscriber.h"
+@import GPSKit;
 
 @interface CLHLocationSubscriber (Test)
 

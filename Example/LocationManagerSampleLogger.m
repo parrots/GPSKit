@@ -1,5 +1,5 @@
 //
-//  CLHLocationManagerSampleLogger.m
+//  LocationManagerSampleLogger.m
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -24,10 +24,10 @@
 //
 
 @import CoreLocation;
-#import "CLHLocationManagerSampleLogger.h"
-#import <GPSKit/CLHGPSKit.h>
+@import GPSKit;
+#import "LocationManagerSampleLogger.h"
 
-@interface CLHLocationManagerSampleLogger()
+@interface LocationManagerSampleLogger()
 
 @property (nonatomic) id updatedLocationSubscriptionToken;
 @property (nonatomic) id updatedSignalStrengthSubscriptionToken;
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation CLHLocationManagerSampleLogger
+@implementation LocationManagerSampleLogger
 
 - (id)init
 {

@@ -1,5 +1,5 @@
 //
-//  CLHLocationManagerSampleLogger.h
+//  SignalStrengthViewController.h
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -23,6 +23,8 @@
 //  THE SOFTWARE.
 //
 
-@interface CLHLocationManagerSampleLogger : NSObject
+@import UIKit;
+
+@interface SignalStrengthViewController : UITableViewController
 
 @end

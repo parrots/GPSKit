@@ -1,1099 +1,523 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0102E7A70E0A4A25B5AD9C08</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-GPSKitTests/Pods-GPSKitTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>1A4A9373D4A548C7AD83F388</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5ACD1E2FF88442A496423352</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4CDD9771AAB1F73F0CADD7A5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E37AF370981DD5221D10129B</string>
-				<string>973E68EC0F10BC5E05F8B7AA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5729A8EFE4ED455F90ACABEC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5ACD1E2FF88442A496423352</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-GPSKitTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>813A8C471921C9C7006C6185</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CLHCoreLocationManager_TestMethods.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>813A8C481921CA00006C6185</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CLHLocationSubscriber_TestMethods.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8155633C1925B3D800805AD5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CLHCoreLocationManagerTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8155633D1925B3D800805AD5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8155633C1925B3D800805AD5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8159AD8D18B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8159AD9B18B8FA3C00C68532</string>
-				<string>8159ADAF18B8FA3C00C68532</string>
-				<string>8159AD9818B8FA3C00C68532</string>
-				<string>8159AD9718B8FA3C00C68532</string>
-				<string>4CDD9771AAB1F73F0CADD7A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159AD8E18B8FA3C00C68532</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>CLH</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Curtis Herbert</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>8159ADA518B8FA3C00C68532</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>8159AD9518B8FA3C00C68532</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>8159AD9118B8FA3C00C68532</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>8159AD8D18B8FA3C00C68532</string>
-			<key>productRefGroup</key>
-			<string>8159AD9718B8FA3C00C68532</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>8159AD9518B8FA3C00C68532</string>
-				<string>8159ADA518B8FA3C00C68532</string>
-			</array>
-		</dict>
-		<key>8159AD9118B8FA3C00C68532</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8159ADB718B8FA3D00C68532</string>
-				<string>8159ADB818B8FA3D00C68532</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8159AD9218B8FA3C00C68532</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8194DD91191D42CF0033002D</string>
-				<string>8159ADC118B8FA6200C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8159AD9318B8FA3C00C68532</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8159AD9418B8FA3C00C68532</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>8160E440191DCEAB005A3CFA</string>
-				<string>8160E441191DCEAB005A3CFA</string>
-				<string>8160E442191DCEAB005A3CFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8159AD9518B8FA3C00C68532</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8159ADB918B8FA3D00C68532</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8159AD9218B8FA3C00C68532</string>
-				<string>8159AD9318B8FA3C00C68532</string>
-				<string>8159AD9418B8FA3C00C68532</string>
-				<string>8194DCB1191D3ADA0033002D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>GPSKit</string>
-			<key>productName</key>
-			<string>CLHLocationManager</string>
-			<key>productReference</key>
-			<string>8159AD9618B8FA3C00C68532</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>8159AD9618B8FA3C00C68532</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libGPSKit.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8159AD9718B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8159AD9618B8FA3C00C68532</string>
-				<string>8159ADA618B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159AD9818B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8159AD9918B8FA3C00C68532</string>
-				<string>8159ADA718B8FA3C00C68532</string>
-				<string>8159ADAA18B8FA3C00C68532</string>
-				<string>5729A8EFE4ED455F90ACABEC</string>
-				<string>E55857D81C804BE0A50C3C03</string>
-				<string>5ACD1E2FF88442A496423352</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159AD9918B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8159AD9B18B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8194DD93191D436D0033002D</string>
-				<string>8159ADBF18B8FA6200C68532</string>
-				<string>8159ADC018B8FA6200C68532</string>
-				<string>8194DD8E191D42CF0033002D</string>
-				<string>8194DD8F191D42CF0033002D</string>
-				<string>8159AD9C18B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Source</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159AD9C18B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8159AD9D18B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159AD9D18B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GPSKit-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADA218B8FA3C00C68532</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8194DCB4191D3CBB0033002D</string>
-				<string>8155633D1925B3D800805AD5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8159ADA318B8FA3C00C68532</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8159ADAE18B8FA3C00C68532</string>
-				<string>8159ADA818B8FA3C00C68532</string>
-				<string>8159ADAB18B8FA3C00C68532</string>
-				<string>8159ADA918B8FA3C00C68532</string>
-				<string>1A4A9373D4A548C7AD83F388</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8159ADA418B8FA3C00C68532</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8159ADB418B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8159ADA518B8FA3C00C68532</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8159ADBC18B8FA3D00C68532</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CA14C40EBF1F4F209CF5B852</string>
-				<string>8159ADA218B8FA3C00C68532</string>
-				<string>8159ADA318B8FA3C00C68532</string>
-				<string>8159ADA418B8FA3C00C68532</string>
-				<string>0102E7A70E0A4A25B5AD9C08</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>8159ADAD18B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>GPSKitTests</string>
-			<key>productName</key>
-			<string>CLHLocationManagerTests</string>
-			<key>productReference</key>
-			<string>8159ADA618B8FA3C00C68532</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>8159ADA618B8FA3C00C68532</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>GPSKitTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8159ADA718B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>8159ADA818B8FA3C00C68532</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159ADA718B8FA3C00C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8159ADA918B8FA3C00C68532</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159AD9918B8FA3C00C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8159ADAA18B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>8159ADAB18B8FA3C00C68532</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159ADAA18B8FA3C00C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8159ADAC18B8FA3C00C68532</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>8159AD8E18B8FA3C00C68532</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>8159AD9518B8FA3C00C68532</string>
-			<key>remoteInfo</key>
-			<string>CLHLocationManager</string>
-		</dict>
-		<key>8159ADAD18B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>8159AD9518B8FA3C00C68532</string>
-			<key>targetProxy</key>
-			<string>8159ADAC18B8FA3C00C68532</string>
-		</dict>
-		<key>8159ADAE18B8FA3C00C68532</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159AD9618B8FA3C00C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8159ADAF18B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8155633C1925B3D800805AD5</string>
-				<string>8194DCB3191D3CBB0033002D</string>
-				<string>813A8C471921C9C7006C6185</string>
-				<string>813A8C481921CA00006C6185</string>
-				<string>8159ADB018B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADB018B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8159ADB118B8FA3C00C68532</string>
-				<string>8159ADB218B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADB118B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>GPSKitTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADB218B8FA3C00C68532</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8159ADB318B8FA3C00C68532</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADB318B8FA3C00C68532</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADB418B8FA3C00C68532</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159ADB218B8FA3C00C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8159ADB718B8FA3D00C68532</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8159ADB818B8FA3D00C68532</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8159ADB918B8FA3D00C68532</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8159ADBA18B8FA3D00C68532</string>
-				<string>8159ADBB18B8FA3D00C68532</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8159ADBA18B8FA3D00C68532</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEAD_CODE_STRIPPING</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/GPSKit.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Source/GPSKit-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>GPSKit</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>include/$(PROJECT_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8159ADBB18B8FA3D00C68532</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEAD_CODE_STRIPPING</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/GPSKit.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Source/GPSKit-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>GPSKit</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>include/$(PROJECT_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8159ADBC18B8FA3D00C68532</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8159ADBD18B8FA3D00C68532</string>
-				<string>8159ADBE18B8FA3D00C68532</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8159ADBD18B8FA3D00C68532</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E37AF370981DD5221D10129B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Source/GPSKit-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Tests/GPSKitTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>GPSKitTests</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8159ADBE18B8FA3D00C68532</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>973E68EC0F10BC5E05F8B7AA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Source/GPSKit-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Tests/GPSKitTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>GPSKitTests</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8159ADBF18B8FA6200C68532</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CLHCoreLocationManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADC018B8FA6200C68532</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CLHCoreLocationManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8159ADC118B8FA6200C68532</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159ADC018B8FA6200C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8160E440191DCEAB005A3CFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8194DD93191D436D0033002D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8160E441191DCEAB005A3CFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8194DD8E191D42CF0033002D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8160E442191DCEAB005A3CFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8159ADBF18B8FA6200C68532</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8194DCB1191D3ADA0033002D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8194DCB3191D3CBB0033002D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CLHLocationSubscriberTests.m</string>
-			<key>path</key>
-			<string>Tests/CLHLocationSubscriberTests.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8194DCB4191D3CBB0033002D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8194DCB3191D3CBB0033002D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8194DD8E191D42CF0033002D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CLHLocationSubscriber.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8194DD8F191D42CF0033002D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CLHLocationSubscriber.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8194DD91191D42CF0033002D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8194DD8F191D42CF0033002D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8194DD93191D436D0033002D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CLHGPSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>973E68EC0F10BC5E05F8B7AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-GPSKitTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-GPSKitTests/Pods-GPSKitTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CA14C40EBF1F4F209CF5B852</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E37AF370981DD5221D10129B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-GPSKitTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-GPSKitTests/Pods-GPSKitTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E55857D81C804BE0A50C3C03</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-CLHLocationManagerTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>8159AD8E18B8FA3C00C68532</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A4A9373D4A548C7AD83F388 /* libPods-GPSKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACD1E2FF88442A496423352 /* libPods-GPSKitTests.a */; };
+		8155633D1925B3D800805AD5 /* CLHCoreLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8155633C1925B3D800805AD5 /* CLHCoreLocationManagerTests.m */; };
+		8159ADA818B8FA3C00C68532 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159ADA718B8FA3C00C68532 /* XCTest.framework */; };
+		8159ADA918B8FA3C00C68532 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159AD9918B8FA3C00C68532 /* Foundation.framework */; };
+		8159ADAB18B8FA3C00C68532 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8159ADAA18B8FA3C00C68532 /* UIKit.framework */; };
+		8159ADB418B8FA3C00C68532 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8159ADB218B8FA3C00C68532 /* InfoPlist.strings */; };
+		815D530C1A94597300B80DC6 /* GPSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 815D530B1A94597300B80DC6 /* GPSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		815D53201A9459F700B80DC6 /* CLHCoreLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */; };
+		815D53211A945A0000B80DC6 /* CLHLocationSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */; };
+		815D53221A945B7E00B80DC6 /* CLHCoreLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8159ADBF18B8FA6200C68532 /* CLHCoreLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		815D53231A945B8300B80DC6 /* CLHLocationSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 8194DD8E191D42CF0033002D /* CLHLocationSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		815D53291A945FC200B80DC6 /* CLHLocationSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */; };
+		815D532A1A945FC500B80DC6 /* CLHCoreLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */; };
+		8194DCB4191D3CBB0033002D /* CLHLocationSubscriberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DCB3191D3CBB0033002D /* CLHLocationSubscriberTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5729A8EFE4ED455F90ACABEC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACD1E2FF88442A496423352 /* libPods-GPSKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPSKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A8C471921C9C7006C6185 /* CLHCoreLocationManager_TestMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCoreLocationManager_TestMethods.h; sourceTree = "<group>"; };
+		813A8C481921CA00006C6185 /* CLHLocationSubscriber_TestMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLocationSubscriber_TestMethods.h; sourceTree = "<group>"; };
+		8155633C1925B3D800805AD5 /* CLHCoreLocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHCoreLocationManagerTests.m; sourceTree = "<group>"; };
+		8159AD9918B8FA3C00C68532 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8159ADA618B8FA3C00C68532 /* GPSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8159ADA718B8FA3C00C68532 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8159ADAA18B8FA3C00C68532 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8159ADB118B8FA3C00C68532 /* GPSKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSKitTests-Info.plist"; sourceTree = "<group>"; };
+		8159ADB318B8FA3C00C68532 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8159ADBF18B8FA6200C68532 /* CLHCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHCoreLocationManager.h; sourceTree = "<group>"; };
+		8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHCoreLocationManager.m; sourceTree = "<group>"; };
+		815D53071A94597300B80DC6 /* GPSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		815D530A1A94597300B80DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Source/Info.plist; sourceTree = "<group>"; };
+		815D530B1A94597300B80DC6 /* GPSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GPSKit.h; path = ../Source/GPSKit.h; sourceTree = "<group>"; };
+		8194DCB3191D3CBB0033002D /* CLHLocationSubscriberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLHLocationSubscriberTests.m; path = Tests/CLHLocationSubscriberTests.m; sourceTree = SOURCE_ROOT; };
+		8194DD8E191D42CF0033002D /* CLHLocationSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLocationSubscriber.h; sourceTree = "<group>"; };
+		8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLocationSubscriber.m; sourceTree = "<group>"; };
+		973E68EC0F10BC5E05F8B7AA /* Pods-GPSKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPSKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPSKitTests/Pods-GPSKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		E37AF370981DD5221D10129B /* Pods-GPSKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPSKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPSKitTests/Pods-GPSKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E55857D81C804BE0A50C3C03 /* libPods-CLHLocationManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLHLocationManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8159ADA318B8FA3C00C68532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8159ADA818B8FA3C00C68532 /* XCTest.framework in Frameworks */,
+				8159ADAB18B8FA3C00C68532 /* UIKit.framework in Frameworks */,
+				8159ADA918B8FA3C00C68532 /* Foundation.framework in Frameworks */,
+				1A4A9373D4A548C7AD83F388 /* libPods-GPSKitTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815D53031A94597300B80DC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDD9771AAB1F73F0CADD7A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E37AF370981DD5221D10129B /* Pods-GPSKitTests.debug.xcconfig */,
+				973E68EC0F10BC5E05F8B7AA /* Pods-GPSKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8159AD8D18B8FA3C00C68532 = {
+			isa = PBXGroup;
+			children = (
+				815D53081A94597300B80DC6 /* Source */,
+				8159ADAF18B8FA3C00C68532 /* Tests */,
+				8159AD9818B8FA3C00C68532 /* Frameworks */,
+				8159AD9718B8FA3C00C68532 /* Products */,
+				4CDD9771AAB1F73F0CADD7A5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8159AD9718B8FA3C00C68532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8159ADA618B8FA3C00C68532 /* GPSKitTests.xctest */,
+				815D53071A94597300B80DC6 /* GPSKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8159AD9818B8FA3C00C68532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8159AD9918B8FA3C00C68532 /* Foundation.framework */,
+				8159ADA718B8FA3C00C68532 /* XCTest.framework */,
+				8159ADAA18B8FA3C00C68532 /* UIKit.framework */,
+				5729A8EFE4ED455F90ACABEC /* libPods.a */,
+				E55857D81C804BE0A50C3C03 /* libPods-CLHLocationManagerTests.a */,
+				5ACD1E2FF88442A496423352 /* libPods-GPSKitTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8159ADAF18B8FA3C00C68532 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8155633C1925B3D800805AD5 /* CLHCoreLocationManagerTests.m */,
+				8194DCB3191D3CBB0033002D /* CLHLocationSubscriberTests.m */,
+				813A8C471921C9C7006C6185 /* CLHCoreLocationManager_TestMethods.h */,
+				813A8C481921CA00006C6185 /* CLHLocationSubscriber_TestMethods.h */,
+				8159ADB018B8FA3C00C68532 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8159ADB018B8FA3C00C68532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8159ADB118B8FA3C00C68532 /* GPSKitTests-Info.plist */,
+				8159ADB218B8FA3C00C68532 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		815D53081A94597300B80DC6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				815D530B1A94597300B80DC6 /* GPSKit.h */,
+				8159ADBF18B8FA6200C68532 /* CLHCoreLocationManager.h */,
+				8159ADC018B8FA6200C68532 /* CLHCoreLocationManager.m */,
+				8194DD8E191D42CF0033002D /* CLHLocationSubscriber.h */,
+				8194DD8F191D42CF0033002D /* CLHLocationSubscriber.m */,
+				815D53091A94597300B80DC6 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		815D53091A94597300B80DC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				815D530A1A94597300B80DC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		815D53041A94597300B80DC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815D53221A945B7E00B80DC6 /* CLHCoreLocationManager.h in Headers */,
+				815D53231A945B8300B80DC6 /* CLHLocationSubscriber.h in Headers */,
+				815D530C1A94597300B80DC6 /* GPSKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8159ADA518B8FA3C00C68532 /* GPSKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8159ADBC18B8FA3D00C68532 /* Build configuration list for PBXNativeTarget "GPSKitTests" */;
+			buildPhases = (
+				CA14C40EBF1F4F209CF5B852 /* Check Pods Manifest.lock */,
+				8159ADA218B8FA3C00C68532 /* Sources */,
+				8159ADA318B8FA3C00C68532 /* Frameworks */,
+				8159ADA418B8FA3C00C68532 /* Resources */,
+				0102E7A70E0A4A25B5AD9C08 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSKitTests;
+			productName = CLHLocationManagerTests;
+			productReference = 8159ADA618B8FA3C00C68532 /* GPSKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		815D53061A94597300B80DC6 /* GPSKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815D531A1A94597300B80DC6 /* Build configuration list for PBXNativeTarget "GPSKit" */;
+			buildPhases = (
+				815D53021A94597300B80DC6 /* Sources */,
+				815D53031A94597300B80DC6 /* Frameworks */,
+				815D53041A94597300B80DC6 /* Headers */,
+				815D53051A94597300B80DC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSKit;
+			productName = GPSKit;
+			productReference = 815D53071A94597300B80DC6 /* GPSKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8159AD8E18B8FA3C00C68532 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CLH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Curtis Herbert";
+				TargetAttributes = {
+					8159ADA518B8FA3C00C68532 = {
+						TestTargetID = 8159AD9518B8FA3C00C68532;
+					};
+					815D53061A94597300B80DC6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 8159AD9118B8FA3C00C68532 /* Build configuration list for PBXProject "GPSKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8159AD8D18B8FA3C00C68532;
+			productRefGroup = 8159AD9718B8FA3C00C68532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8159ADA518B8FA3C00C68532 /* GPSKitTests */,
+				815D53061A94597300B80DC6 /* GPSKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8159ADA418B8FA3C00C68532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8159ADB418B8FA3C00C68532 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815D53051A94597300B80DC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0102E7A70E0A4A25B5AD9C08 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPSKitTests/Pods-GPSKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA14C40EBF1F4F209CF5B852 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8159ADA218B8FA3C00C68532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8194DCB4191D3CBB0033002D /* CLHLocationSubscriberTests.m in Sources */,
+				815D532A1A945FC500B80DC6 /* CLHCoreLocationManager.m in Sources */,
+				8155633D1925B3D800805AD5 /* CLHCoreLocationManagerTests.m in Sources */,
+				815D53291A945FC200B80DC6 /* CLHLocationSubscriber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815D53021A94597300B80DC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815D53211A945A0000B80DC6 /* CLHLocationSubscriber.m in Sources */,
+				815D53201A9459F700B80DC6 /* CLHCoreLocationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8159ADB218B8FA3C00C68532 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8159ADB318B8FA3C00C68532 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8159ADB718B8FA3D00C68532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8159ADB818B8FA3D00C68532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8159ADBD18B8FA3D00C68532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E37AF370981DD5221D10129B /* Pods-GPSKitTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/GPSKitTests-Info.plist";
+				PRODUCT_NAME = GPSKitTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8159ADBE18B8FA3D00C68532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973E68EC0F10BC5E05F8B7AA /* Pods-GPSKitTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Tests/GPSKitTests-Info.plist";
+				PRODUCT_NAME = GPSKitTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		815D531B1A94597300B80DC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		815D531C1A94597300B80DC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8159AD9118B8FA3C00C68532 /* Build configuration list for PBXProject "GPSKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8159ADB718B8FA3D00C68532 /* Debug */,
+				8159ADB818B8FA3D00C68532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8159ADBC18B8FA3D00C68532 /* Build configuration list for PBXNativeTarget "GPSKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8159ADBD18B8FA3D00C68532 /* Debug */,
+				8159ADBE18B8FA3D00C68532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815D531A1A94597300B80DC6 /* Build configuration list for PBXNativeTarget "GPSKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815D531B1A94597300B80DC6 /* Debug */,
+				815D531C1A94597300B80DC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8159AD8E18B8FA3C00C68532 /* Project object */;
+}

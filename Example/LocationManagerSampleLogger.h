@@ -1,5 +1,5 @@
 //
-//  CLHDetailViewController.h
+//  LocationManagerSampleLogger.h
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -23,11 +23,6 @@
 //  THE SOFTWARE.
 //
 
-@import UIKit;
-@import MapKit;
-
-@interface CLHResolveLocationController : UIViewController
-
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@interface LocationManagerSampleLogger : NSObject
 
 @end

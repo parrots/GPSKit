@@ -24,9 +24,10 @@
 //
 
 @import CoreLocation;
+@import Foundation;
+@import GPSKit;
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-#import "CLHCoreLocationManager.h"
 #import "CLHLocationSubscriber_TestMethods.h"
 
 @interface CLHLocationSubscriberTests : XCTestCase

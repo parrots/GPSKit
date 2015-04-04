@@ -23,7 +23,7 @@
 //  THE SOFTWARE.
 //
 
-#import "CLHCoreLocationManager.h"
+@import GPSKit;
 
 @interface CLHCoreLocationManager (Test)
 

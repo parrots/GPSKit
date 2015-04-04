@@ -1,8 +1,9 @@
 //
-//  CLHLiveTrackingViewController.h
-//  GPSKit iOS Example
+//  GPSKit.h
+//  GPSKit
 //
-//  Created by Curtis Herbert on 5/10/14.
+//  Created by Curtis Herbert on 6/4/13.
+//  http://consumedbycode.com/goodies/gpskit
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,16 +24,15 @@
 //  THE SOFTWARE.
 //
 
-@import UIKit;
-@import MapKit;
+@import Foundation;
 
-@interface CLHLiveTrackingViewController : UIViewController <MKMapViewDelegate>
+//! Project version number for GPSKit.
+FOUNDATION_EXPORT double GPSKitVersionNumber;
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UIButton *startTrackingButton;
-@property (weak, nonatomic) IBOutlet UIButton *stopTrackingButton;
+//! Project version string for GPSKit.
+FOUNDATION_EXPORT const unsigned char GPSKitVersionString[];
 
-- (IBAction)startTracking:(id)sender;
-- (IBAction)stopTracking:(id)sender;
+// In this header, you should import all the public headers of your framework using statements like #import <GPSKit/PublicHeader.h>
 
-@end
+#import "CLHCoreLocationManager.h"
+#import "CLHLocationSubscriber.h"

@@ -1,5 +1,5 @@
 //
-//  CLHLiveTrackingViewController.m
+//  LiveTrackingViewController.m
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/10/14.
@@ -23,10 +23,10 @@
 //  THE SOFTWARE.
 //
 
-#import "CLHLiveTrackingViewController.h"
-#import <GPSKit/CLHGPSKit.h>
+@import GPSKit;
+#import "LiveTrackingViewController.h"
 
-@interface CLHLiveTrackingViewController () <UIAlertViewDelegate>
+@interface LiveTrackingViewController () <UIAlertViewDelegate>
 
 @property (nonatomic) CLHLocationSubscriber *locationSubscriber;
 @property BOOL isTracking;
@@ -34,7 +34,7 @@
 
 @end
 
-@implementation CLHLiveTrackingViewController
+@implementation LiveTrackingViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -155,7 +155,7 @@
 
 - (void)updateTitleWithStength:(CLHGPSKitSignalStrength)strength
 {
-    self.title = [NSString stringWithFormat:@"Live - %@", [CLHLiveTrackingViewController stringForStrength:strength]];
+    self.title = [NSString stringWithFormat:@"Live - %@", [LiveTrackingViewController stringForStrength:strength]];
 }
 
 - (void)updateButtonStates

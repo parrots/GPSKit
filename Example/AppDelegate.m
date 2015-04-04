@@ -1,5 +1,5 @@
 //
-//  CLHMapPin.m
+//  AppDelegate.m
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -23,8 +23,25 @@
 //  THE SOFTWARE.
 //
 
-#import "CLHMapPin.h"
+#import "AppDelegate.h"
+#import "LocationManagerSampleLogger.h"
 
-@implementation CLHMapPin
+@interface AppDelegate()
+
+@property LocationManagerSampleLogger *logger;
+
+@end
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+#ifdef DEBUG
+    self.logger = [[LocationManagerSampleLogger alloc] init];
+#endif
+    
+    return YES;
+}
 
 @end

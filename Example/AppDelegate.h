@@ -1,5 +1,5 @@
 //
-//  CLHMapPin.h
+//  AppDelegate.h
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -23,10 +23,10 @@
 //  THE SOFTWARE.
 //
 
-@import MapKit;
+@import UIKit;
 
-@interface CLHMapPin : NSObject <MKAnnotation>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8160E446191DD0CE005A3CFA /* CLHMapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E445191DD0CE005A3CFA /* CLHMapPin.m */; };
+		8160E446191DD0CE005A3CFA /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E445191DD0CE005A3CFA /* MapPin.m */; };
 		8160E448191DD1F1005A3CFA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8160E447191DD1F1005A3CFA /* CoreLocation.framework */; };
 		8160E449191DD1F6005A3CFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194DD8A191D3FB80033002D /* MapKit.framework */; };
-		8160E44C191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E44B191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.m */; };
-		8160E44F191DD75F005A3CFA /* CLHSignalStrengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E44E191DD75F005A3CFA /* CLHSignalStrengthViewController.m */; };
-		8160E452191DE4B5005A3CFA /* CLHLiveTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E451191DE4B5005A3CFA /* CLHLiveTrackingViewController.m */; };
+		8160E44C191DD3F0005A3CFA /* LocationManagerSampleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E44B191DD3F0005A3CFA /* LocationManagerSampleLogger.m */; };
+		8160E44F191DD75F005A3CFA /* SignalStrengthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E44E191DD75F005A3CFA /* SignalStrengthViewController.m */; };
+		8160E452191DE4B5005A3CFA /* LiveTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8160E451191DE4B5005A3CFA /* LiveTrackingViewController.m */; };
+		81885DCF1AD437C200A34383 /* GPSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81885DCE1AD437C200A34383 /* GPSKit.framework */; };
 		8194DD5D191D3EEB0033002D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8194DD5B191D3EEB0033002D /* InfoPlist.strings */; };
 		8194DD5F191D3EEB0033002D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD5E191D3EEB0033002D /* main.m */; };
-		8194DD63191D3EEB0033002D /* CLHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD62191D3EEB0033002D /* CLHAppDelegate.m */; };
-		8194DD6C191D3EEB0033002D /* CLHResolveLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD6B191D3EEB0033002D /* CLHResolveLocationController.m */; };
+		8194DD63191D3EEB0033002D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD62191D3EEB0033002D /* AppDelegate.m */; };
+		8194DD6C191D3EEB0033002D /* ResolveLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194DD6B191D3EEB0033002D /* ResolveLocationController.m */; };
 		8194DD6E191D3EEB0033002D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8194DD6D191D3EEB0033002D /* Images.xcassets */; };
 		8194DD9B191DC4D20033002D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8194DD64191D3EEB0033002D /* Main.storyboard */; };
-		81AF4C65192E9110000F779F /* libGPSKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81AF4C64192E9110000F779F /* libGPSKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8160E444191DD0CE005A3CFA /* CLHMapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHMapPin.h; sourceTree = "<group>"; };
-		8160E445191DD0CE005A3CFA /* CLHMapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHMapPin.m; sourceTree = "<group>"; };
+		815D53241A945C8000B80DC6 /* GPSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPSKit.framework; path = "build/Debug-iphoneos/GPSKit.framework"; sourceTree = "<group>"; };
+		8160E444191DD0CE005A3CFA /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		8160E445191DD0CE005A3CFA /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		8160E447191DD1F1005A3CFA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		8160E44A191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLocationManagerSampleLogger.h; sourceTree = "<group>"; };
-		8160E44B191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLocationManagerSampleLogger.m; sourceTree = "<group>"; };
-		8160E44D191DD75F005A3CFA /* CLHSignalStrengthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHSignalStrengthViewController.h; sourceTree = "<group>"; };
-		8160E44E191DD75F005A3CFA /* CLHSignalStrengthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHSignalStrengthViewController.m; sourceTree = "<group>"; };
-		8160E450191DE4B5005A3CFA /* CLHLiveTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHLiveTrackingViewController.h; sourceTree = "<group>"; };
-		8160E451191DE4B5005A3CFA /* CLHLiveTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHLiveTrackingViewController.m; sourceTree = "<group>"; };
+		8160E44A191DD3F0005A3CFA /* LocationManagerSampleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManagerSampleLogger.h; sourceTree = "<group>"; };
+		8160E44B191DD3F0005A3CFA /* LocationManagerSampleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManagerSampleLogger.m; sourceTree = "<group>"; };
+		8160E44D191DD75F005A3CFA /* SignalStrengthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalStrengthViewController.h; sourceTree = "<group>"; };
+		8160E44E191DD75F005A3CFA /* SignalStrengthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalStrengthViewController.m; sourceTree = "<group>"; };
+		8160E450191DE4B5005A3CFA /* LiveTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveTrackingViewController.h; sourceTree = "<group>"; };
+		8160E451191DE4B5005A3CFA /* LiveTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveTrackingViewController.m; sourceTree = "<group>"; };
+		81885DCE1AD437C200A34383 /* GPSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPSKit.framework; path = "build/Debug-iphoneos/GPSKit.framework"; sourceTree = "<group>"; };
 		8194DD4F191D3EEB0033002D /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8194DD52191D3EEB0033002D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8194DD54191D3EEB0033002D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -40,11 +42,11 @@
 		8194DD5C191D3EEB0033002D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8194DD5E191D3EEB0033002D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8194DD60191D3EEB0033002D /* GPSKit iOS Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSKit iOS Example-Prefix.pch"; sourceTree = "<group>"; };
-		8194DD61191D3EEB0033002D /* CLHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLHAppDelegate.h; sourceTree = "<group>"; };
-		8194DD62191D3EEB0033002D /* CLHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLHAppDelegate.m; sourceTree = "<group>"; };
+		8194DD61191D3EEB0033002D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8194DD62191D3EEB0033002D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8194DD65191D3EEB0033002D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8194DD6A191D3EEB0033002D /* CLHResolveLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLHResolveLocationController.h; sourceTree = "<group>"; };
-		8194DD6B191D3EEB0033002D /* CLHResolveLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLHResolveLocationController.m; sourceTree = "<group>"; };
+		8194DD6A191D3EEB0033002D /* ResolveLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResolveLocationController.h; sourceTree = "<group>"; };
+		8194DD6B191D3EEB0033002D /* ResolveLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResolveLocationController.m; sourceTree = "<group>"; };
 		8194DD6D191D3EEB0033002D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8194DD74191D3EEB0033002D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8194DD8A191D3FB80033002D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -58,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AF4C65192E9110000F779F /* libGPSKit.a in Frameworks */,
+				81885DCF1AD437C200A34383 /* GPSKit.framework in Frameworks */,
 				8160E449191DD1F6005A3CFA /* MapKit.framework in Frameworks */,
 				8160E448191DD1F1005A3CFA /* CoreLocation.framework in Frameworks */,
 			);
@@ -87,6 +89,8 @@
 		8194DD51191D3EEB0033002D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81885DCE1AD437C200A34383 /* GPSKit.framework */,
+				815D53241A945C8000B80DC6 /* GPSKit.framework */,
 				81AF4C64192E9110000F779F /* libGPSKit.a */,
 				8160E447191DD1F1005A3CFA /* CoreLocation.framework */,
 				8194DD99191DC4BD0033002D /* libCLHLocationManager.a */,
@@ -103,18 +107,18 @@
 		8194DD58191D3EEB0033002D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8194DD61191D3EEB0033002D /* CLHAppDelegate.h */,
-				8194DD62191D3EEB0033002D /* CLHAppDelegate.m */,
-				8160E44D191DD75F005A3CFA /* CLHSignalStrengthViewController.h */,
-				8160E44E191DD75F005A3CFA /* CLHSignalStrengthViewController.m */,
-				8194DD6A191D3EEB0033002D /* CLHResolveLocationController.h */,
-				8194DD6B191D3EEB0033002D /* CLHResolveLocationController.m */,
-				8160E450191DE4B5005A3CFA /* CLHLiveTrackingViewController.h */,
-				8160E451191DE4B5005A3CFA /* CLHLiveTrackingViewController.m */,
-				8160E444191DD0CE005A3CFA /* CLHMapPin.h */,
-				8160E445191DD0CE005A3CFA /* CLHMapPin.m */,
-				8160E44A191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.h */,
-				8160E44B191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.m */,
+				8194DD61191D3EEB0033002D /* AppDelegate.h */,
+				8194DD62191D3EEB0033002D /* AppDelegate.m */,
+				8160E44D191DD75F005A3CFA /* SignalStrengthViewController.h */,
+				8160E44E191DD75F005A3CFA /* SignalStrengthViewController.m */,
+				8194DD6A191D3EEB0033002D /* ResolveLocationController.h */,
+				8194DD6B191D3EEB0033002D /* ResolveLocationController.m */,
+				8160E450191DE4B5005A3CFA /* LiveTrackingViewController.h */,
+				8160E451191DE4B5005A3CFA /* LiveTrackingViewController.m */,
+				8160E444191DD0CE005A3CFA /* MapPin.h */,
+				8160E445191DD0CE005A3CFA /* MapPin.m */,
+				8160E44A191DD3F0005A3CFA /* LocationManagerSampleLogger.h */,
+				8160E44B191DD3F0005A3CFA /* LocationManagerSampleLogger.m */,
 				8194DD64191D3EEB0033002D /* Main.storyboard */,
 				8194DD6D191D3EEB0033002D /* Images.xcassets */,
 				8194DD59191D3EEB0033002D /* Supporting Files */,
@@ -212,13 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8194DD63191D3EEB0033002D /* CLHAppDelegate.m in Sources */,
-				8194DD6C191D3EEB0033002D /* CLHResolveLocationController.m in Sources */,
-				8160E452191DE4B5005A3CFA /* CLHLiveTrackingViewController.m in Sources */,
-				8160E44C191DD3F0005A3CFA /* CLHLocationManagerSampleLogger.m in Sources */,
-				8160E446191DD0CE005A3CFA /* CLHMapPin.m in Sources */,
+				8194DD63191D3EEB0033002D /* AppDelegate.m in Sources */,
+				8194DD6C191D3EEB0033002D /* ResolveLocationController.m in Sources */,
+				8160E452191DE4B5005A3CFA /* LiveTrackingViewController.m in Sources */,
+				8160E44C191DD3F0005A3CFA /* LocationManagerSampleLogger.m in Sources */,
+				8160E446191DD0CE005A3CFA /* MapPin.m in Sources */,
 				8194DD5F191D3EEB0033002D /* main.m in Sources */,
-				8160E44F191DD75F005A3CFA /* CLHSignalStrengthViewController.m in Sources */,
+				8160E44F191DD75F005A3CFA /* SignalStrengthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,17 +323,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/GPSKit iOS Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(BUILT_PRODUCTS_DIR)/include/GPSKit/",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Example/iOS Example-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"${BUILT_PRODUCTS_DIR}",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "iOS Example";
 				WRAPPER_EXTENSION = app;
 			};
@@ -340,17 +340,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/GPSKit iOS Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(BUILT_PRODUCTS_DIR)/include/GPSKit/",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Example/iOS Example-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"${BUILT_PRODUCTS_DIR}",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "iOS Example";
 				WRAPPER_EXTENSION = app;
 			};

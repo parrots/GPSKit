@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8159AD9518B8FA3C00C68532"
-               BuildableName = "libGPSKit.a"
+               BlueprintIdentifier = "815D53061A94597300B80DC6"
+               BuildableName = "GPSKit.framework"
                BlueprintName = "GPSKit"
                ReferencedContainer = "container:GPSKit.xcodeproj">
             </BuildableReference>
@@ -25,7 +25,7 @@
             buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8159ADA518B8FA3C00C68532"
@@ -53,6 +53,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "815D53061A94597300B80DC6"
+            BuildableName = "GPSKit.framework"
+            BlueprintName = "GPSKit"
+            ReferencedContainer = "container:GPSKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -63,6 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "815D53061A94597300B80DC6"
+            BuildableName = "GPSKit.framework"
+            BlueprintName = "GPSKit"
+            ReferencedContainer = "container:GPSKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,6 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "815D53061A94597300B80DC6"
+            BuildableName = "GPSKit.framework"
+            BlueprintName = "GPSKit"
+            ReferencedContainer = "container:GPSKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

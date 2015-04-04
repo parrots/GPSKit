@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
-        <!--Table View Controller - Examples-->
+        <!--Examples-->
         <scene sceneID="21i-HA-CQn">
             <objects>
                 <tableViewController id="Mlg-41-TLz" sceneMemberID="viewController">
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="470" y="64"/>
         </scene>
-        <!--Signal Strength View Controller - Strength-->
+        <!--Strength-->
         <scene sceneID="cJd-uF-oiy">
             <objects>
-                <tableViewController id="ReZ-DM-atO" customClass="CLHSignalStrengthViewController" sceneMemberID="viewController">
+                <tableViewController id="ReZ-DM-atO" customClass="SignalStrengthViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="G8Y-c3-3It">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="949" y="-644"/>
         </scene>
-        <!--Live Tracking View Controller - Live Tracking-->
+        <!--Live Tracking-->
         <scene sceneID="gsS-9V-WoA">
             <objects>
-                <viewController id="zAW-GR-KZW" customClass="CLHLiveTrackingViewController" sceneMemberID="viewController">
+                <viewController id="zAW-GR-KZW" customClass="LiveTrackingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ljv-RG-wBv"/>
                         <viewControllerLayoutGuide type="bottom" id="6wj-x1-bly"/>
@@ -156,14 +156,12 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xPv-Io-OW1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="503"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="zAW-GR-KZW" id="TSx-RF-uq4"/>
                                 </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fs-6M-KZI">
                                 <rect key="frame" x="20" y="518" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.37254901959999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Start Tracking">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,7 +173,6 @@
                             </button>
                             <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aul-yP-YOf">
                                 <rect key="frame" x="186" y="518" width="114" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79215686269999996" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Stop Tracking">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -199,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="949" y="802"/>
         </scene>
-        <!--Resolve Location Controller - One-time-->
+        <!--One-time-->
         <scene sceneID="4XX-0r-3IX">
             <objects>
-                <viewController id="UDz-no-T6A" customClass="CLHResolveLocationController" sceneMemberID="viewController">
+                <viewController id="UDz-no-T6A" customClass="ResolveLocationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dHF-rQ-o9h"/>
                         <viewControllerLayoutGuide type="bottom" id="Xge-aq-iqz"/>
@@ -213,7 +210,6 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1lR-lW-t4J">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

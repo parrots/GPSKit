@@ -1,9 +1,8 @@
 //
-//  CLHGPSKit.h
-//  GPSKit
+//  LiveTrackingViewController.h
+//  GPSKit iOS Example
 //
-//  Created by Curtis Herbert on 6/4/13.
-//  http://consumedbycode.com/goodies/gpskit
+//  Created by Curtis Herbert on 5/10/14.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,5 +23,16 @@
 //  THE SOFTWARE.
 //
 
-#import "CLHCoreLocationManager.h"
-#import "CLHLocationSubscriber.h"
+@import UIKit;
+@import MapKit;
+
+@interface LiveTrackingViewController : UIViewController <MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIButton *startTrackingButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopTrackingButton;
+
+- (IBAction)startTracking:(id)sender;
+- (IBAction)stopTracking:(id)sender;
+
+@end

@@ -1,5 +1,5 @@
 //
-//  CLHSignalStrengthViewController.h
+//  MapPin.m
 //  GPSKit iOS Example
 //
 //  Created by Curtis Herbert on 5/9/14.
@@ -23,8 +23,8 @@
 //  THE SOFTWARE.
 //
 
-@import UIKit;
+#import "MapPin.h"
 
-@interface CLHSignalStrengthViewController : UITableViewController
+@implementation MapPin
 
 @end
