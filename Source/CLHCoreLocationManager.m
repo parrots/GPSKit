@@ -157,10 +157,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 }
 
 - (void)unsubscribeForMode:(CLHGPSKitSubscriptionMode)mode
-{
-    NSInteger currentModeValue = [self.requestedModes[mode] integerValue];
-    NSAssert(currentModeValue > 0, @"Trying to stop mode %@ one too many times", [CLHCoreLocationManager displayNameForMode:mode]);
-    
+{    
     [self updateSubscriberCountForMode:mode incrementBy:-1];
 }
 
@@ -201,7 +198,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     }
 }
 
-- (CLLocation *)currentLocation
+- (CLLocation * _Nullable)currentLocation
 {
     if (![self isLocationFresh:_currentLocation]) {
         return nil;
@@ -386,7 +383,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 
 - (BOOL)isLocationFresh:(CLLocation *)location
 {
-    return self.maxLocationAge == CLHCoreLocationManagerDontValidateLocationAge || abs([location.timestamp timeIntervalSinceNow]) <= self.maxLocationAge;
+    return self.maxLocationAge == CLHCoreLocationManagerDontValidateLocationAge || fabs([location.timestamp timeIntervalSinceNow]) <= self.maxLocationAge;
 }
 
 @end
