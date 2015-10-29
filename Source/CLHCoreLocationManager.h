@@ -66,6 +66,8 @@ typedef NS_ENUM(NSInteger, CLHGPSKitSubscriptionMode) {
     CLHGPSKitSubscriptionModeLiveTracking = 2
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  Can be used as a value for 'maxLocationAge' to disable time-based filtering.
  */
@@ -100,7 +102,7 @@ extern NSString * const CLHGPSKitLocationResolvedNotificationNoteKey;
 /**
  *  Most recent location reported by the system. Here for KVO goodness.
  */
-@property (readonly) CLLocation *currentLocation;
+@property (readonly, nullable) CLLocation *currentLocation;
 /**
  *  Most recent signal strength reported by the system. Here for KVO goodness.
  */
@@ -140,7 +142,7 @@ extern NSString * const CLHGPSKitLocationResolvedNotificationNoteKey;
  *
  *  @return singleton
  */
-+ (id)sharedManager;
++ (instancetype)sharedManager;
 /**
  *  Allows a user to override the CoreLocationManager this system will use. Good for mock managers.
  *
@@ -185,3 +187,5 @@ extern NSString * const CLHGPSKitLocationResolvedNotificationNoteKey;
 + (NSString *)displayNameForStrength:(CLHGPSKitSignalStrength)strength;
 
 @end
+
+NS_ASSUME_NONNULL_END

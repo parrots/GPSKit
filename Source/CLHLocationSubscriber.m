@@ -129,7 +129,7 @@
 
 #pragma mark - Current GPS state
 
-- (CLLocation *)currentLocation
+- (CLLocation * _Nullable)currentLocation
 {
     return self.coreLocationManager.currentLocation;
 }

@@ -21,11 +21,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.9</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>0.9</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIBackgroundModes</key>
@@ -48,10 +48,10 @@
 			<false/>
 		</dict>
 	</dict>
-    <key>NSLocationUsageDescription</key>
-    <string>Your location is used to show off the app.</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Your location is used to show off the app.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Your location is used to show off the app.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location is used to show off the app.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

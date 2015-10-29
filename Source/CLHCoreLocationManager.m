@@ -201,7 +201,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     }
 }
 
-- (CLLocation *)currentLocation
+- (CLLocation * _Nullable)currentLocation
 {
     if (![self isLocationFresh:_currentLocation]) {
         return nil;
@@ -386,7 +386,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 
 - (BOOL)isLocationFresh:(CLLocation *)location
 {
-    return self.maxLocationAge == CLHCoreLocationManagerDontValidateLocationAge || abs([location.timestamp timeIntervalSinceNow]) <= self.maxLocationAge;
+    return self.maxLocationAge == CLHCoreLocationManagerDontValidateLocationAge || fabs([location.timestamp timeIntervalSinceNow]) <= self.maxLocationAge;
 }
 
 @end

@@ -27,6 +27,8 @@
 @import CoreLocation;
 #import "CLHCoreLocationManager.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  Use this class in place of Apple's CoreLocationManager. Provides convenient block-based methods and 
  *  abstracts boilerplate logic into three "subscription modes".
@@ -39,7 +41,7 @@
 /**
  *  Most recent location reported by the system. Here for KVO goodness.
  */
-@property (readonly) CLLocation *currentLocation;
+@property (readonly, nullable) CLLocation *currentLocation;
 /**
  *  Most recent signal strength reported by the system. Here for KVO goodness.
  */
@@ -74,7 +76,7 @@
  *  @param inProgressHandler Callback to handle location reported back while actual location is resolved.
  *  @param completionHandler Callback made when location is determined to be accurate enough to be considered done.
  */
-- (void)resolveCurrentLocationWithInProgressHandler:(void (^)(CLLocation *location))inProgressHandler andCompletionHandler:(void (^)(CLLocation *location))completionHandler;
+- (void)resolveCurrentLocationWithInProgressHandler:(nullable void (^)(CLLocation *location))inProgressHandler andCompletionHandler:(void (^)(CLLocation *location))completionHandler;
 /**
  *  Cancels any pending lookup requests.
  */
@@ -114,3 +116,5 @@
 - (void)setErrorHandler:(void (^)(NSError *error))handler;
 
 @end
+
+NS_ASSUME_NONNULL_END

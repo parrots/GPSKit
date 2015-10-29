@@ -43,7 +43,7 @@
     [[mockManager expect] subscribeForMode:CLHGPSKitSubscriptionModeSignalMonitoring];
     [[mockManager expect] unsubscribeForMode:CLHGPSKitSubscriptionModeSignalMonitoring];
     
-    [subscriber startSignalMonitoringWithHandler:nil];
+    [subscriber startSignalMonitoringWithHandler:^(CLHGPSKitSignalStrength strength) {}];
     [subscriber stopSignalMonitoring];
     
     [mockManager verify];
@@ -56,7 +56,7 @@
     [[mockManager expect] subscribeForMode:CLHGPSKitSubscriptionModeCurrentLocation];
     [[mockManager expect] unsubscribeForMode:CLHGPSKitSubscriptionModeCurrentLocation];
     
-    [subscriber resolveCurrentLocationWithInProgressHandler:nil andCompletionHandler:nil];
+    [subscriber resolveCurrentLocationWithInProgressHandler:nil andCompletionHandler:^(CLLocation *location) {}];
     [subscriber cancelResolvingCurrentLocation];
     
     [mockManager verify];
@@ -69,7 +69,7 @@
     [[mockManager expect] subscribeForMode:CLHGPSKitSubscriptionModeLiveTracking];
     [[mockManager expect] unsubscribeForMode:CLHGPSKitSubscriptionModeLiveTracking];
     
-    [subscriber startLiveTrackingWithHandler:nil];
+    [subscriber startLiveTrackingWithHandler:^(CLLocation *location) {}];
     [subscriber stopLiveTracking];
     
     [mockManager verify];
@@ -126,7 +126,7 @@
     __block NSMutableArray* returnedLocations = [[NSMutableArray alloc] init];
     [subscriber resolveCurrentLocationWithInProgressHandler:^(CLLocation *location) {
         [returnedLocations addObject:location];
-    } andCompletionHandler:nil];
+    } andCompletionHandler:^(CLLocation * location) {}];
     for (CLLocation *location in expectedLocations) {
         [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitNewLocationNotification object:nil userInfo:@{ CLHGPSKitNewLocationNotificationNoteKey: location}];
     }
@@ -160,7 +160,7 @@
     [[mockManager expect] unsubscribeForMode:CLHGPSKitSubscriptionModeCurrentLocation];
     
     CLLocation *expectedCompletionLocation = [[CLLocation alloc] initWithCoordinate:CLLocationCoordinate2DMake(10, 10) altitude:10 horizontalAccuracy:5 verticalAccuracy:5 timestamp:[NSDate date]];
-    [subscriber resolveCurrentLocationWithInProgressHandler:nil andCompletionHandler:nil];
+    [subscriber resolveCurrentLocationWithInProgressHandler:nil andCompletionHandler:^(CLLocation *location) {}];
     [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitLocationResolvedNotification object:nil userInfo:@{ CLHGPSKitLocationResolvedNotificationNoteKey: expectedCompletionLocation}];
     
     [mockManager verify];
@@ -289,7 +289,7 @@
     [subscriber setErrorHandler:^(NSError *error) {
         returnedError = error;
     }];
-    [subscriber startLiveTrackingWithHandler:nil];
+    [subscriber startLiveTrackingWithHandler:^(CLLocation *location) {}];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitErrorNotification object:nil userInfo:@{ CLHGPSKitErrorNotificationNoteKey: expectedError}];
     
@@ -308,7 +308,7 @@
     [subscriber setErrorHandler:^(NSError *error) {
         returnedError = error;
     }];
-    [subscriber startLiveTrackingWithHandler:nil];
+    [subscriber startLiveTrackingWithHandler:^(CLLocation *location) {}];
     [subscriber stopLiveTracking];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitErrorNotification object:nil userInfo:@{ CLHGPSKitErrorNotification: expectedError}];
