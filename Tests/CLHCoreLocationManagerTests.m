@@ -190,14 +190,6 @@
     XCTAssertTrue(![manager isInMode:CLHGPSKitSubscriptionModeSignalMonitoring], @"Expected to be unsubscribed to mode");
 }
 
-- (void)testExcessiveUnsubscribeForMode
-{
-    id clManager = [OCMockObject niceMockForClass:[CLLocationManager class]];
-    CLHCoreLocationManager *manager = [[CLHCoreLocationManager alloc] init];
-    [manager useLocationManager:clManager];
-    XCTAssertThrows([manager unsubscribeForMode:CLHGPSKitSubscriptionModeSignalMonitoring], @"Expected exception for double unsubscribe");
-}
-
 - (void)testResolvedLocationNotification
 {
     id clManager = [OCMockObject niceMockForClass:[CLLocationManager class]];
