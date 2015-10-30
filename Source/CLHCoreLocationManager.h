@@ -151,6 +151,13 @@ extern NSString * const CLHGPSKitLocationResolvedNotificationNoteKey;
 - (void)useLocationManager:(CLLocationManager *)locationManager;
 
 /**
+ * Manager being used by GPSKit
+ *
+ * @return location manger being used
+ */
+- (CLLocationManager *)locationManager;
+
+/**
  *  Tell the system to start working in a specific mode.
  *
  *  @param mode Mode to start.

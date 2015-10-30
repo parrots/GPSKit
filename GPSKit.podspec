@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "GPSKit"
-  spec.version = "0.9.1"
+  spec.version = "0.9.2"
   spec.summary = "CoreLocation without the fuss (and with blocks!)."
 
   spec.homepage = "https://github.com/parrots/GPSKit"
