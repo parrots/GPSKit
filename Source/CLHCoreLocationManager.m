@@ -211,7 +211,9 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     if (currentLocation != _currentLocation) {
         _currentLocation = currentLocation;
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitNewLocationNotification object:nil userInfo:@{CLHGPSKitNewLocationNotificationNoteKey : currentLocation}];
+        if (currentLocation != nil) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitNewLocationNotification object:nil userInfo:@{CLHGPSKitNewLocationNotificationNoteKey : currentLocation}];
+        }
     }
 }
 
