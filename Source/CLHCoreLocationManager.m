@@ -93,7 +93,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
             __strong typeof(weakSelf) strongSelf = weakSelf;
             if (strongSelf) {
                 if (![strongSelf isInMode:CLHGPSKitSubscriptionModeLiveTracking]) {
-                    [strongSelf.locationManager stopUpdatingLocation];
+                    [strongSelf stopUpdatingLocation];
                 }
                 [NSObject cancelPreviousPerformRequestsWithTarget:strongSelf selector:@selector(forceLocationCheck) object:nil];
             }
@@ -179,7 +179,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 
 - (void)forceLocationCheck
 {
-    [self.locationManager startUpdatingLocation];
+    [self startUpdatingLocation];
 }
 
 #pragma mark - Current GPS status properties
@@ -355,10 +355,10 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
         BOOL shouldBeTracking = [[self.requestedModes valueForKeyPath:@"@max.self"] integerValue] > 0;
         if (shouldBeTracking && !self.isTracking) {
             self.isTracking = YES;
-            [self.locationManager startUpdatingLocation];
+            [self startUpdatingLocation];
         } else if (!shouldBeTracking && self.isTracking) {
             self.isTracking = NO;
-            [self.locationManager stopUpdatingLocation];
+            [self stopUpdatingLocation];
             [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(forceLocationCheck) object:nil];
         }
     
@@ -366,10 +366,30 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
         NSUInteger changedTo = [change[NSKeyValueChangeNewKey][0] integerValue];
         NSUInteger changeMode = ((NSIndexSet *)change[NSKeyValueChangeIndexesKey]).firstIndex;
         if (changedTo == 1 && changeMode == CLHGPSKitSubscriptionModeLiveTracking) {
-            [self.locationManager startUpdatingLocation];
+            [self startUpdatingLocation];
             [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(forceLocationCheck) object:nil];
         }
     }
+}
+
+- (void)startUpdatingLocation
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9) {
+        BOOL backgroundLocationUpdate = self.allowBackgroundFetches;
+        
+        NSMethodSignature* signature = [[CLLocationManager class] instanceMethodSignatureForSelector:@selector(setAllowsBackgroundLocationUpdates:)];
+        NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:signature];
+        [invocation setTarget:self.locationManager];
+        [invocation setSelector:@selector(setAllowsBackgroundLocationUpdates:)];
+        [invocation setArgument:&backgroundLocationUpdate atIndex:2];
+        [invocation invoke];
+    }
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)stopUpdatingLocation
+{
+    [self.locationManager stopUpdatingLocation];
 }
 
 - (void)setDistanceFilter:(CLLocationDistance)distanceFilter

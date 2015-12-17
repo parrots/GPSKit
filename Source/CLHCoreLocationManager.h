@@ -138,6 +138,12 @@ extern NSString * const CLHGPSKitLocationResolvedNotificationNoteKey;
 @property (nonatomic) NSTimeInterval maxLocationAge;
 
 /**
+ *  Flag to allow or disallow location updates while in the background, iOS 9 flag
+    of setAllowsBackgroundLocationUpdates
+ */
+@property (nonatomic) BOOL allowBackgroundFetches;
+
+/**
  *  Manager for the custom CoreLocation system.
  *
  *  @return singleton
