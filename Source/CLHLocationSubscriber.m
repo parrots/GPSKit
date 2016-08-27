@@ -220,4 +220,19 @@
     [self.coreLocationManager forceLocationCheck];
 }
 
+- (void)geofenceRegion:(CLRegion *)region
+{
+    [self.coreLocationManager geofenceRegion:region];
+}
+
+- (NSArray <CLRegion *>*)geofencedRegions
+{
+    return [self.coreLocationManager geofencedRegions];
+}
+
+- (void)stopGeofencingRegion:(CLRegion *)region
+{
+    [self.coreLocationManager stopGeofencingRegion:region];
+}
+
 @end

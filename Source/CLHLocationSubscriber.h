@@ -115,6 +115,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setErrorHandler:(void (^)(NSError *error))handler;
 
+- (void)geofenceRegion:(CLRegion *)region;
+- (NSArray<CLRegion *>*)geofencedRegions;
+- (void)stopGeofencingRegion:(CLRegion *)region;
+
 @end
 
 NS_ASSUME_NONNULL_END

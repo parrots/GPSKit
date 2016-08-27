@@ -146,12 +146,14 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     dispatch_once(&onceToken, ^{
         if (!self.locationManager) {
             [self useLocationManager:[[CLLocationManager alloc] init]];
-            
-            if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-                [self.locationManager performSelector:@selector(requestWhenInUseAuthorization)];
-            }
         }
     });
+    
+    if (CLLocationManager.authorizationStatus == kCLAuthorizationStatusNotDetermined) {
+        if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locationManager performSelector:@selector(requestWhenInUseAuthorization)];
+        }
+    }
     
     [self updateSubscriberCountForMode:mode incrementBy:1];
 }
@@ -275,6 +277,15 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     self.currentStrength = CLHGPSKitSignalStrengthNone;
     
     [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitErrorNotification object:nil userInfo:@{CLHGPSKitErrorNotificationNoteKey : error}];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        if (self.isTracking) {
+            [self.locationManager startUpdatingLocation];
+        }
+    }
 }
 
 #pragma mark - Helpers
@@ -406,6 +417,36 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 - (BOOL)isLocationFresh:(CLLocation *)location
 {
     return self.maxLocationAge == CLHCoreLocationManagerDontValidateLocationAge || fabs([location.timestamp timeIntervalSinceNow]) <= self.maxLocationAge;
+}
+
+- (void)geofenceRegion:(CLRegion *)region
+{
+    //we want to lazy-load the location manager if we can so users don't get a pop-up asking for permission
+    //until the app is actually trying to do something
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!self.locationManager) {
+            [self useLocationManager:[[CLLocationManager alloc] init]];
+        }
+    });
+    
+    if (CLLocationManager.authorizationStatus == kCLAuthorizationStatusNotDetermined || CLLocationManager.authorizationStatus == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        if ([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+            [self.locationManager performSelector:@selector(requestAlwaysAuthorization)];
+        }
+    }
+    
+    [self.locationManager startMonitoringForRegion:region];
+}
+
+- (NSArray <CLRegion *>*)geofencedRegions
+{
+    return [[self.locationManager monitoredRegions] allObjects];
+}
+
+- (void)stopGeofencingRegion:(CLRegion *)region
+{
+    [self.locationManager stopMonitoringForRegion:region];
 }
 
 @end
