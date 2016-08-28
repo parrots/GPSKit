@@ -134,6 +134,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     self.locationManager.distanceFilter = self.distanceFilter;
     self.locationManager.pausesLocationUpdatesAutomatically = NO;
     self.locationManager.activityType = CLActivityTypeFitness;
+    self.currentLocation = nil;
 }
 
 #pragma mark - Mode tracking
