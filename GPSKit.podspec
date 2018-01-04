@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "GPSKit"
-  spec.version = "0.9.3"
+  spec.version = "0.9.4"
   spec.summary = "CoreLocation without the fuss (and with blocks!)."
 
   spec.homepage = "https://github.com/parrots/GPSKit"
@@ -21,4 +21,5 @@ Pod::Spec.new do |spec|
   spec.framework = 'CoreLocation'
   spec.requires_arc = true
   spec.ios.deployment_target = '7.0'
+  spec.watchos.deployment_target = '3.0'
 end

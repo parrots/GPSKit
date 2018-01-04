@@ -24,7 +24,9 @@
 //  THE SOFTWARE.
 //
 
+#ifndef WATCH
 @import UIKit;
+#endif
 #import "CLHCoreLocationManager.h"
 
 NSString * const CLHGPSKitNewLocationNotification = @"com.curtisherbert.gpskit.newlocation";
@@ -87,7 +89,8 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
         
         self.requestedModes = [[NSMutableArray alloc] initWithObjects:@(0), @(0), @(0), nil];
         [self addObserver:self forKeyPath:NSStringFromSelector(@selector(requestedModes)) options:NSKeyValueObservingOptionNew context:nil];
-        
+
+#ifndef WATCH
         __weak typeof(self) weakSelf = self;
         self.backgroundSubscriptionToken = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
             __strong typeof(weakSelf) strongSelf = weakSelf;
@@ -98,7 +101,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
                 [NSObject cancelPreviousPerformRequestsWithTarget:strongSelf selector:@selector(forceLocationCheck) object:nil];
             }
         }];
-        
+
         self.foregroundSubscriptionToken = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
             __strong typeof(weakSelf) strongSelf = weakSelf;
             if (strongSelf) {
@@ -107,6 +110,7 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
                 }
             }
         }];
+#endif
         
         self.currentStrength = CLHGPSKitSignalStrengthNone;
         self.currentLocation = nil;
@@ -132,7 +136,9 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
     self.locationManager = locationManager;
     self.locationManager.delegate = self;
     self.locationManager.distanceFilter = self.distanceFilter;
+#ifndef WATCH
     self.locationManager.pausesLocationUpdatesAutomatically = NO;
+#endif
     self.locationManager.activityType = CLActivityTypeFitness;
     self.currentLocation = nil;
 }
@@ -386,9 +392,8 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 
 - (void)startUpdatingLocation
 {
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9) {
+    if ([self.locationManager respondsToSelector:@selector(setAllowsBackgroundLocationUpdates:)]) {
         BOOL backgroundLocationUpdate = self.allowBackgroundFetches;
-        
         NSMethodSignature* signature = [[CLLocationManager class] instanceMethodSignatureForSelector:@selector(setAllowsBackgroundLocationUpdates:)];
         NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:signature];
         [invocation setTarget:self.locationManager];
@@ -436,18 +441,23 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
             [self.locationManager performSelector:@selector(requestAlwaysAuthorization)];
         }
     }
-    
+#ifndef WATCH
     [self.locationManager startMonitoringForRegion:region];
+#endif
 }
 
 - (NSArray <CLRegion *>*)geofencedRegions
 {
+#ifndef WATCH
     return [[self.locationManager monitoredRegions] allObjects];
+#endif
 }
 
 - (void)stopGeofencingRegion:(CLRegion *)region
 {
+#ifndef WATCH
     [self.locationManager stopMonitoringForRegion:region];
+#endif
 }
 
 @end
