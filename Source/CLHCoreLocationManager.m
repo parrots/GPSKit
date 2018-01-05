@@ -392,14 +392,8 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 
 - (void)startUpdatingLocation
 {
-    if ([self.locationManager respondsToSelector:@selector(setAllowsBackgroundLocationUpdates:)]) {
-        BOOL backgroundLocationUpdate = self.allowBackgroundFetches;
-        NSMethodSignature* signature = [[CLLocationManager class] instanceMethodSignatureForSelector:@selector(setAllowsBackgroundLocationUpdates:)];
-        NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:signature];
-        [invocation setTarget:self.locationManager];
-        [invocation setSelector:@selector(setAllowsBackgroundLocationUpdates:)];
-        [invocation setArgument:&backgroundLocationUpdate atIndex:2];
-        [invocation invoke];
+    if (@available(watchOS 4.0, iOS 9.0, *)) {
+        self.locationManager.allowsBackgroundLocationUpdates = self.allowBackgroundFetches;
     }
     [self.locationManager startUpdatingLocation];
 }
