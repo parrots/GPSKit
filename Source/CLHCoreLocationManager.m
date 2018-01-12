@@ -35,6 +35,7 @@ NSString * const CLHGPSKitLocationResolvedNotification = @"com.curtisherbert.gps
 NSString * const CLHGPSKitErrorNotification = @"com.curtisherbert.gpskit.error";
 NSString * const CLHGPSKitModeSubscribeNotification = @"com.curtisherbert.gpskit.modesubscribe";
 NSString * const CLHGPSKitModeUnsubscribeNotification = @"com.curtisherbert.gpskit.modeunsubscribe";
+NSString * const CLHGPSKitAuthStatusChangedNotification = @"com.curtisherbert.gpskit.authchanged";
 
 NSString * const CLHGPSKitNewLocationNotificationNoteKey = @"location";
 NSString * const CLHGPSKitLocationResolvedNotificationNoteKey = @"resolvedlocation";
@@ -288,6 +289,8 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:CLHGPSKitAuthStatusChangedNotification object:nil userInfo:@{}];
+
     if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         if (self.isTracking) {
             [self.locationManager startUpdatingLocation];

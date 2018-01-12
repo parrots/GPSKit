@@ -79,6 +79,7 @@ extern NSTimeInterval const CLHCoreLocationManagerDontValidateLocationAge;
 extern NSString * const CLHGPSKitNewLocationNotification;
 extern NSString * const CLHGPSKitNewStrengthNotification;
 extern NSString * const CLHGPSKitLocationResolvedNotification;
+extern NSString * const CLHGPSKitAuthStatusChangedNotification;
 extern NSString * const CLHGPSKitErrorNotification;
 extern NSString * const CLHGPSKitModeSubscribeNotification;
 extern NSString * const CLHGPSKitModeUnsubscribeNotification;
