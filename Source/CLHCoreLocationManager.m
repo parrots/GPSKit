@@ -447,6 +447,8 @@ static CLHCoreLocationManager *CLHLocationManagerSharedInstance = nil;
 {
 #ifndef WATCH
     return [[self.locationManager monitoredRegions] allObjects];
+#else
+    return @[];
 #endif
 }
 
